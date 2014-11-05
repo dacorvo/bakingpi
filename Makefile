@@ -5,9 +5,8 @@
 #	A makefile script for generation of raspberry pi kernel images.
 ###############################################################################
 
-# The toolchain to use. arm-none-eabi works, but there does exist 
-# arm-bcm2708-linux-gnueabi.
-ARMGNU ?= arm-none-eabi
+# Use the toolchain built with crosstool-ng 
+ARMGNU ?= ~/x-tools/armv6-rpi-linux-gnueabi/bin/armv6-rpi-linux-gnueabi
 
 # The intermediate directory for compiled object files.
 BUILD = build/
